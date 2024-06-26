@@ -40,13 +40,13 @@ class _IntroScreenState extends State<IntroScreen> {
                   fontWeight: FontWeight.normal),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 36,
           ),
           InkWell(
             onTap: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => LoginScreen()));
+                  MaterialPageRoute(builder: (context) => const LoginScreen()));
             },
             child: Container(
               height: 63,

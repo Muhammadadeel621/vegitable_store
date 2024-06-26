@@ -20,12 +20,12 @@ class _LoginScreenState extends State<LoginScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: EdgeInsets.only(top: 20, left: 20),
+              padding: const EdgeInsets.only(top: 20, left: 20),
               child: GestureDetector(
                   onTap: () {
                     Navigator.pop(context);
                   },
-                  child: Icon(Icons.arrow_back_ios)),
+                  child: const Icon(Icons.arrow_back_ios)),
             ),
             const SizedBox(
               height: 30,
@@ -78,7 +78,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => Bottomnavigation()));
+                        builder: (context) => const Bottomnavigation()));
               },
               child: Center(
                 child: Container(
